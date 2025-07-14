@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { RegistrationForm } from "../components/RegistrationForm";
-import { userEvent } from "storybook/internal/test";
 
 const meta = {
   component: RegistrationForm,
