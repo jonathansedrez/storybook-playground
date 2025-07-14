@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Storybook deep dive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is storybook
+Storybook is a frontend workshop for building UI components and pages in isolation. Thousands of teams use it for UI development, testing, and documentation. It's open source and free.
 
-Currently, two official plugins are available:
+## Work's with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Official support for:
+  - React
+  - Vue (2 & 3)
+  - Angular
+  - Svelte
+  - Ember
+  - Web Components & HTML
+  - Preact
+- Community support for:
+  - SolidJS
+  - Qwik
+  - Stencil & Lit
 
-## Expanding the ESLint configuration
+## Why to use
+- Isolation 
+- Documentation
+- Testing & Quality
+- Collaboration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Storybook is Open Source and Free
+- Maintained by the Storybook community and the core team at Chromatic.
+- Chromatic provides optional paid features like:
+  - Visual regression testing
+  - Component review workflows
+  - Hosting & publishing for Storybook
 
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## Base use
+- Development
+- Testing
+- Visual testing*
+- Documentation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Competition
+1. Ladle – Fast alternative to Storybook for React (focus on performance).
+2. Histoire – Playground & documentation tool with Vite integration 
+3. React Styleguidist – React component documentation tool.
+4. Docz – Component documentation with MDX for React.
+5. Pattern Lab – Static pattern library generator for design systems
+6. Bit – Component management, sharing, and reuse across projects.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Why Storybook remains dominant:
+- Massive community and ecosystem
+- Rich plugin/addon system
+- Supports React, Vue, Angular, Svelte, Web Components, and more
+- Official backing from Chromatic (which also maintains Storybook)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Demo
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## Conclusion
 
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+> "Storybook helps us build UI components faster, safer, and with better documentation—without relying on the rest of the app."
 
+
+
+Demo
 ---
 
 - [x] Create base input component
