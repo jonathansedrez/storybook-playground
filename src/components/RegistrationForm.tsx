@@ -14,7 +14,11 @@ export const RegistrationForm: React.FC = () => {
   return (
     <>
       <p>Welcome to registration form</p>
-      <Input onChange={(e) => setInput(e.target.value)} isRequired={!input} />
+      <Input
+        onChange={(e) => setInput(e.target.value)}
+        isRequired={!input}
+        label="Some label"
+      />
 
       <button onClick={handleConfirm}>Confirm</button>
 
