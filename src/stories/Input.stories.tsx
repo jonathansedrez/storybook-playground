@@ -17,6 +17,7 @@ export const Default: Story = {};
 export const RequiredArgs: Story = {
   args: {
     isRequired: true,
+    label: "Some label",
   },
 };
 
