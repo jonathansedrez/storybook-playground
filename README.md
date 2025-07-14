@@ -74,6 +74,7 @@ export default tseslint.config([
 - [x] Render methods: args x props
 - [x] Interactions
 - [x] Actions
-- [ ] Visual test
+- [x] autodocs
 - [ ] e2e test
 - [ ] Publish on Chormatic
+- [ ] Visual test
