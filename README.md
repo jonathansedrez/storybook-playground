@@ -75,6 +75,6 @@ export default tseslint.config([
 - [x] Interactions
 - [x] Actions
 - [x] autodocs
-- [ ] e2e test
+- [x] e2e test
 - [ ] Publish on Chormatic
 - [ ] Visual test
