@@ -67,3 +67,12 @@ export default tseslint.config([
   },
 ])
 ```
+
+---
+- [ ] Create base input component
+- [ ] Render methods: args x props
+- [ ] Interactions
+- [ ] Visual test
+- [ ] e2e test
+- [ ] Play actions
+- [ ] Publish on Chormatic
