@@ -71,7 +71,7 @@ export default tseslint.config([
 ---
 - [x] Create base input component
 - [x] Render methods: args x props
-- [ ] Interactions
+- [x] Interactions
 - [ ] Visual test
 - [ ] e2e test
 - [ ] Play actions
