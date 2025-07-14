@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { RegistrationForm } from "../components/RegistrationForm";
 
+import { expect } from "storybook/test";
+
 const meta = {
   component: RegistrationForm,
   parameters: {
@@ -25,5 +27,8 @@ export const Default: Story = {
 
     const submitButton = canvas.getByRole("button");
     await userEvent.click(submitButton);
+
+    // 👇 Assert DOM structure
+    await expect(canvas.getByText("Done!")).toBeInTheDocument();
   },
 };
